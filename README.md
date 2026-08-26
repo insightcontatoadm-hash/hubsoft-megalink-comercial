@@ -1,4 +1,4 @@
-# Painel Comercial Megalink — HubSoft
+# Performance Comercial B2B - B2G — HubSoft Megalink
 
 Dashboard HTML autocontido que reproduz as informações do relatório de referência com a fonte substituída pelo banco HubSoft Megalink.
 
