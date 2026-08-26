@@ -2,6 +2,8 @@
 
 Dashboard HTML autocontido que reproduz as informações do relatório de referência com a fonte substituída pelo banco HubSoft Megalink.
 
+A identidade visual da Mega usa uma versão otimizada e recortada da logo fornecida pelo usuário, embutida como `data URI` no HTML. Ela aparece em tamanho legível na lateral e na capa; o arquivo original não é alterado nem publicado separadamente.
+
 ## Conteúdo preservado
 
 - Evolução de vendas (MoM);
