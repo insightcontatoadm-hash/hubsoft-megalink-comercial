@@ -39,11 +39,13 @@ Abra `http://127.0.0.1:8765/index.html`.
 - `VENDA`: `cliente_servico` sem `id_cliente_servico_antigo`, com `data_venda`.
 - `UPGRADE`: serviço novo com serviço anterior e `novo_valor > antigo_valor`; a tabela mostra o valor mensal do novo plano, como no relatório de referência.
 - `DOWNGRADE`: serviço novo com serviço anterior e `novo_valor < antigo_valor`; a perda mensal é `antigo_valor - novo_valor`.
+- `MIGRAÇÃO_NÃO_RESOLVIDA`: serviço anterior ou valor novo ausente; fica fora das métricas para não fabricar eventos.
 - `CANCELAMENTO`: `data_cancelamento` preenchida, exceto a perna antiga de uma migração; essa exclusão evita dupla contagem.
 - `Baixas totais = cancelamentos + downgrades`.
 - `Saldo comercial = vendas/upgrade - baixas`.
 - `Ticket médio = soma do valor mensal de vendas/upgrades ÷ quantidade de eventos`.
 - `Pipeline`: prospectos ativos, não convertidos, com etapa em `crm_lista.nome`. Registros explicitamente marcados como teste e CRMs de teste/cobrança são excluídos e contabilizados na aba de qualidade.
+- `Evolução MoM`: série mensal do ano selecionado; filtros dimensionais permanecem ativos. O recorte mensal/trimestral/semestral não elimina os demais meses da série anual; intervalo personalizado recorta os meses informados.
 - Datas: `data_venda` para vendas/upgrades; `data_cancelamento` para cancelamento; data da migração para downgrade; `created_at` para pipeline.
 
 ## Segmentos
